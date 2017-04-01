@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RXJS</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+        .container-fluid {
+            margin-top: 50px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.41/system.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        System.defaultJSExtensions = true;
+
+        //This will bootstrap your app
+        System.import('main').catch(function(e)
+        {
+            console.error(e);
+        });;
+    </script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4">
+                    <button id="btn" class="btn btn-primary">Refresh</button>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                                <td>Avatar</td>
+                            </tr>
+                        </thead>
+                        <tbody class="users">
+                            <tr class="first"></tr>
+                            <tr class="second"></tr>
+                            <tr class="third"></tr>
+                        </tbody>
+                    </table>
+                    <button id="first-close" class="btn-xs btn-danger">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
